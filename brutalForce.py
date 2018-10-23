@@ -22,13 +22,11 @@ def brutalForce(nBits):
 	nSqrt = math.sqrt(nValueN)
 	nCnt = 3
 	while nCnt <= nSqrt:
-		# Testa a Primalidade
-		if primalityFermat( nCnt ):#if primalityMillerRabin( nCnt ):#
-			# Caso valor encontrando seja um divisor exato, encontrou o primeiro valor
-			if nValueN % nCnt == 0:
-				nP = ( nValueN // nCnt )
-				nQ = nCnt
-				break
+		# Caso valor encontrando seja um divisor exato, encontrou o primeiro valor
+		if nValueN % nCnt == 0:
+			nP = ( nValueN // nCnt )
+			nQ = nCnt
+			break
 		nCnt += 2
 
 	#Salva os valores para calcular o Phi(N)
