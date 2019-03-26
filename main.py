@@ -6,7 +6,7 @@ from pollardRho import pollardRho
 from datetime import datetime
 import time
 arq = open('infosTime.dat','w')
-nBits = 16
+nBits = 120
 nTmpBit = 3
 nMedia = 20
 
