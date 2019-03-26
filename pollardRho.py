@@ -27,10 +27,7 @@ def pollardRho(nBits):
 
 	#busca o valor congruente caso D seja negativo
 	if nValueD < 0:
-		nTemp = 1
-		while nTemp % nValuePhi != nValueD % nValuePhi:
-			nTemp += 1
-		nValueD = nTemp
+		nValueD = nValueD % nValuePhi
 
 	# Descriptograca a Mensagem
 	for nMsg in aLetMsg:
